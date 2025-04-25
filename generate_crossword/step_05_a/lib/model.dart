@@ -205,7 +205,7 @@ abstract class Crossword implements Built<Crossword, CrosswordBuilder> {
 
       // Characters above and below this character must be related
       // by a vertical word
-      if (characters[location.up] case final up?) {
+      if (characters[location.up] case final up) {
         if (character.downWord == null) {
           return false;
         }
@@ -214,7 +214,7 @@ abstract class Crossword implements Built<Crossword, CrosswordBuilder> {
         }
       }
 
-      if (characters[location.down] case final down?) {
+      if (characters[location.down] case final down) {
         if (character.downWord == null) {
           return false;
         }
